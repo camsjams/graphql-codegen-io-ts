@@ -1,20 +1,8 @@
-# graphql-to-io-ts
+# graphql-codegen-io-ts
 
-### **NOTE**: This project is currently outdated, and it will be some time before I can get back to it.
+## Usage
+TBD
 
-[Custom templates](https://github.com/dotansimha/graphql-code-generator/blob/master/packages/graphql-codegen-generators/CUSTOM_TEMPLATES.md) for [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) for generating both native typescript and [io-ts](https://github.com/gcanti/io-ts) types.
-
-## usage
-```bash
-yarn add -D graphql-code-generator graphql graphql-to-io-ts@0.2.1
-```, then put something like the following in your `package.json`, then run `yarn generate-types`:
-```json
-{
-  "scripts": {
-    "generate-types": "gql-gen --template graphql-to-io-ts --schema ./schema/__generated__/schema.json --out schema/__generated__/io-types.ts './src/*/*/*.gql' --customScalars src/io-types/scalars"
-  }
-}
-```
 ## Custom Scalars
 The templates support a custom generator config for custom scalars that you need to define in your `gql-gen.json`:
 ```json
